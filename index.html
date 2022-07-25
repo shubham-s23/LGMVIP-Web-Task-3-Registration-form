@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Edu+SA+Beginner:wght@500&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="/task_2_RG_fm/main.css">
+
+    <title>Registration Form</title>
+
+</head>
+
+<body>
+    <h1>REGISTRATION FORM</h1>
+    <table onsubmit="event.preventDefault();">
+        <tr>
+            <td>
+                <h2>Form</h2>
+                <form onsubmit="onformSubmit();" role="form" autocomplete="off">
+
+                    <div class="form-group">
+
+                        <input type="text" name="fname" id="fname" placeholder="Full Name" required>
+                    </div>
+
+                    <div class="form-group">
+
+                        <input type="email" name="femail" id="femail" placeholder="Email" required>
+                    </div>
+
+                    <div class="form-group">
+
+                        <input type="text" name="fcourse" id="fcourse" placeholder="Course Name" required>
+                    </div>
+                    <div class="form-group">
+
+                        <input type="text" name="gender" id="gender" placeholder="Male / Female" required>
+                    </div>
+                    
+                    <div class="form-action-button">
+                        <button type="submit"> Submit </button>
+                    </div>
+
+                </form>
+            </td>
+
+            <td>
+
+                <table class="list" id="ulist">
+                    <thead>
+                        <tr>
+                            <h3>Registered User</h3>
+                            <th>Name</th>
+                            <th>Email</th>
+                            <th>Course</th>
+                            <th>Gender</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                    </tbody>
+                </table>
+
+            </td>
+        </tr>
+    </table>
+<p>Shubham Sharma</p>
+    <script src="main.js"></script>
+</body>
+
+</html>
